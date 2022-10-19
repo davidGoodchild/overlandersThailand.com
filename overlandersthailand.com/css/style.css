@@ -1,8 +1,15 @@
 
 /* global */
+:root {
+--bg-color: #333;
+--controls: #555;
+--control-accents: #fff;
+--title-color: #fff;
+--text-color: #fff;
+}
 body{
+  margin: 0 5rem;
   background-image: url(../img/topography.svg);
-  ;
 }
 body,
 h1,
@@ -11,8 +18,8 @@ h3,
 h4,
 h5,
 h6{
-  background-color: #333;
-  color: #fff;
+  background-color: var(--bg-color);
+  color: var(--title-color);
 }
 .title {
     background-color: rgb(51, 51, 51, 0.3);
@@ -27,8 +34,8 @@ h6{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #333;
-    color: #fff;
+    background-color:var(--bg-color);
+    color: var(--title-color);
 }
 .brand-title {
     font-size: 1.5rem;
@@ -43,12 +50,12 @@ h6{
     list-style: none;
 }
 .navbar-links li:hover {
- background-color: #555;
+ background-color: var(--controls);
 }
 .navbar-links a {
     margin-right: 20px;
     text-decoration: none;
-    color: #fff;
+    color: var(--text-color);
     padding: 1rem;
     display: block;
 }
@@ -65,7 +72,7 @@ h6{
 .toggle-button .bar {
     height: 3px;
     width: 100%;
-    background-color: #fff;
+    /* background-color: #fff; */
     border-radius: 10px;
 }
 /* header image */
@@ -124,7 +131,7 @@ h6{
   border-bottom: var(--border);
   margin: 0 auto;
   width: 100%;
-  color: white;
+  /* color: white; */
 }
 
 .title {
@@ -174,9 +181,9 @@ h6{
   display: flex;
   align-content: center;
   justify-content: center;
-  color: white;
+  color: var(--control-accents);
   fill: currentcolor;
-  background: #555;
+  background: var(--controls);
   border: none;
   width: var(--size);
   height: var(--size);
@@ -206,15 +213,15 @@ h6{
   padding: 0;
   font-size: 0;
   color: transparent;
-  border: 3px solid white;
-  background-color: white;
+  border: 3px solid var(--control-accents);
+  background-color: var(--control-accents);
   border-radius: 50%;
   width: var(--size);
   height: var(--size);
 }
 
 .carousel-dots .dot.active {
-  background-color: #555;
+  background-color:var(--controls);
 }
 
 /* aspect-ratio fallback */
@@ -246,16 +253,40 @@ h6{
    max-width: 100ch;
 }
 .main-title {
+  font-size: 2rem;
+  text-align: center;
+}
+.facilities-title,
+.directions h4,
+.distance-title,
+.reservations-title {
   /* border: solid 1px red; */
   margin: 1rem 1rem;
   text-align: center;
   font-size: 2.5rem;
+  text-align: center;
   /* text-shadow: 1px 1.5px 8px #333; */
 }
-.info-p {
-  margin-bottom: 1rem;
+.map-title{
+  font-size: 1.2rem;
+}
+
+.info-p,
+.map-p,
+.address,
+.distance
+ {
+  margin: 1rem 0 1rem 0;
   font-size: 1.2rem;
   line-height: 1.2;
+  max-width: 100ch;
+}
+.address {
+  line-height: 1.5
+}
+.distance {
+  font-weight: 400;
+  line-height: 1.5;
 }
 .card {
   display: grid;
@@ -263,11 +294,12 @@ h6{
   grid-gap: 1rem;
   place-items: center;
 }
-.card-img {
+.card-img,
+iframe {
   max-width: 100%;
   max-height: 400px;
   object-fit: cover;
-  /* display: block; */
+  display: block;
   margin-left: auto;
   margin-right: auto;
   /* grid-column: 1/ -1; */
@@ -284,14 +316,40 @@ h6{
   line-height: 1.5;
   font-size: 1.5rem;
 }
+.directions-tagline {
+  font-size: 1.3rem;
+  /* text-align: center; */
+}
+.google-map {
+  margin: 1rem 0;
+  width: 800px;
+  height: 650px;
+}
+.address-list {
+  list-style: none;
+}
+.rates-title,
+.info-rate {
+  font-size: 1.2rem;
+}
+
+
+
 /* media query for mobile */
 @media (max-width: 600px) {
+  body {
+    margin: 0;
+  }
     .toggle-button {
         display: flex;
     }
     .navbar-links {
         display: none;
         width: 100%;
+    }
+    .main-title {
+      font-size: 1.5rem;
+      text-align: center;
     }
     .menu-wrap {
         display: block;
@@ -300,5 +358,32 @@ h6{
     margin-bottom: 1rem;
     font-size: 1.2rem;
     line-height: 1.2;
+    text-align: start;
+}
+.card {
+  display: block;
+  text-align: center;
+}
+.card-content h2 {
+  margin-bottom: 1rem;;
+  font-size: 2rem;
+}
+.card-content p {
+  line-height: 1.5;
+  font-size: 1.2rem;
+}
+
+iframe {
+  max-width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  /* grid-column: 1/ -1; */
+}
+.google-map {
+  width: 500px;
+  height: 350px;
 }
 }
