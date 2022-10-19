@@ -1,11 +1,11 @@
 /* Overflow toggle */
-const hideOverflow = document.getElementById("overflow");
+// const hideOverflow = document.getElementById("overflow");
 
-hideOverflow.addEventListener("click", () => {
-  document.querySelector(".container").style.overflow = hideOverflow.checked
-    ? "hidden"
-    : "visible";
-});
+// hideOverflow.addEventListener("click", () => {
+//   document.querySelector(".container").style.overflow = hideOverflow.checked
+//     ? "hidden"
+//     : "visible";
+// });
 
 /* Carousel */
 const items = document.querySelector(".items");
