@@ -7,15 +7,14 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/hamburger.css">
     <link rel="stylesheet" href="css/style.css">
-    
-    
+    <script src="js/carousel.js" defer></script>
 		<title>Plodd Stop - Overlanders Thailand</title>
 	</head>
 	<body>
 		<header class="header">
+      <!-- full screen menu -->
 			<nav class="navbar">
       <div class="brand-title slideRight">Plodd Stop - Thailand</div>
-      
       <div class="navbar-links">
 				<ul class="nav-list">
 					<li class="nav-item"><a class="nav-link" href="#">Home </a></li>
@@ -24,7 +23,8 @@
 					<li class="nav-item"><a class="nav-link" href="#">Reservations</a></li>
 				</ul>
       </div>
-			</nav>
+    </nav>
+    <!-- hamburger menu -->
       <div class="menu-wrap">
     <input type="checkbox" class="toggler">
     <div class="hamburger"><div></div></div>
@@ -41,11 +41,47 @@
       </div>
     </div>
   </div>
-			<img class="header-img" src="https://unsplash.it/600/400" alt="" />
-		</header>
-		<main class="container">
+  <label class="checkbox">
+  <input type="checkbox" id="overflow" checked /> Hide image overflow
+</label>
+  <div class="container">
+  <h2 class="title">Welcome to the Snuggle Zone</h2>
+  <div class="carousel-viewport">
+    <ul class="items">
+      <li class="item">
+        <img src='https://images.unsplash.com/photo-1611003228577-e610e9a727c5?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMjgzMzExNw&ixlib=rb-1.2.1&q=80&w=1200' width="1200" height="675" alt=''>
+      </li>
+      <li class="item">
+        <img src='https://images.unsplash.com/photo-1611507929918-08ee0bcb42d7?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzE4OTc4OQ&ixlib=rb-1.2.1&q=80&w=1200' width="1200" height="675" alt=''>
+      </li>
+      <li class="item">
+        <img src='https://images.unsplash.com/photo-1589441161120-8781d5644435?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzE4NzY1MQ&ixlib=rb-1.2.1&q=80&w=1200' width="1200" height="675" alt=''>
+      </li>
+      <li class="item">
+        <img src='https://images.unsplash.com/photo-1518914781460-a3ada465edec?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=MnwxNDU4OXwwfDF8cmFuZG9tfHx8fHx8fHx8MTYyMzE4OTg0MA&ixlib=rb-1.2.1&q=80&w=1200' width="1200" height="675" alt=''>
+      </li>
+    </ul>
+  </div>
+  <button class="carousel-control prev" title="Go to previous item">
+    <svg viewBox="0 0 256 512">
+      <path d="M31.7 239l136-136c9.4-9.4 24.6-9.4 33.9 0l22.6 22.6c9.4 9.4 9.4 24.6 0 33.9L127.9 256l96.4 96.4c9.4 9.4 9.4 24.6 0 33.9L201.7 409c-9.4 9.4-24.6 9.4-33.9 0l-136-136c-9.5-9.4-9.5-24.6-.1-34z" />
+    </svg>
+  </button>
+  <button class="carousel-control next" title="Go to next item">
+    <svg viewBox="0 0 256 512">
+      <path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z" />
+    </svg>
+  </button>
+  <ol class="carousel-dots">
+    <li class="dot active">1</li>
+    <li class="dot">2</li>
+    <li class="dot">3</li>
+    <li class="dot">4</li>
+  </ol>
+</div>
+  </header>
+		<main class="main-container">
 			<section class="content">
-				<h1 class="title">Plodd Stop – THE Overlanders Stop!</h1>
 				<p class="tagline">
 					Plodd Stop is situated in a semi-rural area on the outskirts of the city of
 					Pattaya. A little over an hours drive from Bangkok International Airport,
@@ -86,13 +122,13 @@
 					</p>
 				</div>
 			</section>
-			<section class="gallery">
+			<!-- <section class="gallery">
 				<div><img src="https://unsplash.it/600/400" alt="" class="slide1" /></div>
 				<div><img src="https://unsplash.it/600/400" alt="" class="slide2" /></div>
 				<div><img src="https://unsplash.it/600/400" alt="" class="slide3" /></div>
 				<div><img src="https://unsplash.it/600/400" alt="" class="slide4" /></div>
 				<div><img src="https://unsplash.it/600/400" alt="" class="slide5" /></div>
-			</section>
+			</section> -->
 			<section class="facilities">
 				<h3 class="facilities">Facilities</h3>
 				<p class="info-p">
@@ -257,5 +293,6 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
     console.log(navbarLinks)
 })</script>
+
 	</body>
 </html>
