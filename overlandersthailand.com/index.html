@@ -6,12 +6,18 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
+    
 		<title>Plodd Stop - Overlanders Thailand</title>
 	</head>
 	<body>
 		<header class="header">
-			<nav class="nav">
+			<nav class="navbar">
       <div class="brand-title">Plodd Stop - Thailand</div>
+      <a href="#" class="toggle-button">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </a>
       <div class="navbar-links">
 				<ul class="nav-list">
 					<li class="nav-item"><a class="nav-link" href="#">Home </a></li>
@@ -230,5 +236,12 @@ Bt 100 per day per vehicle
       </section>
 			<footer class="footer"></footer>
 		</main>
+    <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
+const navbarLinks = document.getElementsByClassName('navbar-links')[0]
+
+toggleButton.addEventListener('click', () => {
+    navbarLinks.classList.toggle('active')
+    console.log(navbarLinks)
+})</script>
 	</body>
 </html>
