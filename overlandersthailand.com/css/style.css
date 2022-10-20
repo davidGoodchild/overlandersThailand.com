@@ -1,5 +1,5 @@
-
 /* global */
+/* theme colors */
 :root {
 --bg-color: #333;
 --controls: #555;
@@ -7,10 +7,12 @@
 --title-color: #fff;
 --text-color: #fff;
 }
+/* topography background image */
 body{
-  margin: 0 5rem;
+  
   background-image: url(../img/topography.svg);
 }
+/* global body and h styling */
 body,
 h1,
 h2,
@@ -22,12 +24,11 @@ h6{
   background-color: var(--bg-color);
   color: var(--title-color);
 }
-.title {
-    background-color: rgb(51, 51, 51, 0.3);
-  }
-  
-
-/* navigation section */
+/* large screen left and right margin */
+main {
+  margin: 0 3rem;
+}
+/* navigation section - hamburger separate file */
 .menu-wrap {
     display: none;
 }
@@ -102,10 +103,6 @@ h6{
   max-width: 100vw;
 }
 
-.title {
-  place-self: center center;
-}
-
 .carousel-control.prev {
   place-self: center left;
 }
@@ -144,6 +141,8 @@ h6{
  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
  border-radius: .3rem;
   z-index: 1;
+  place-self: center center;
+  background-color: rgb(51, 51, 51, 0.3);
 }
 
 .carousel-viewport {
@@ -319,10 +318,7 @@ iframe {
   line-height: 1.5;
   font-size: 1.5rem;
 }
-.directions-tagline {
-  font-size: 1.3rem;
-  /* text-align: center; */
-}
+
 .google-map {
   margin: 1rem 0;
   width: 800px;
@@ -335,13 +331,20 @@ iframe {
 .info-rate {
   font-size: 1.5rem;
 }
-
+.footer {
+  margin-top: 10px;
+  background-color: black;
+  height:50px;
+}
 
 
 /* media query for mobile */
 @media (max-width: 600px) {
   body {
     margin: 0;
+  }
+  main {
+    margin: 0 1rem;
   }
     .toggle-button {
         display: flex;
