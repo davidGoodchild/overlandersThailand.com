@@ -318,6 +318,33 @@ iframe {
   line-height: 1.5;
   font-size: 1.5rem;
 }
+/* font awesome icons */
+ .icon::before {
+  font-family: "Font Awesome 5 Free";
+  display: inline-block;
+  
+  
+  font-weight: 900;
+ }
+.contact-title::before {
+  padding-right: 5px;
+  content: "\f2a0";
+  transform: rotate(-10deg);
+  color: white;
+  font-size: 2rem;
+  vertical-align: middle;
+}
+.contact-line::before {
+  padding-right: 3px;
+  content:'';
+  background-image: url(../img/line.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+
 
 .google-map {
   margin: 1rem 0;
