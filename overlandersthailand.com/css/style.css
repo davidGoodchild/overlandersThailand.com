@@ -318,6 +318,7 @@ iframe {
   line-height: 1.5;
   font-size: 1.5rem;
 }
+
 /* font awesome icons */
  .icon::before {
   font-family: "Font Awesome 5 Free";
@@ -327,11 +328,24 @@ iframe {
   font-weight: 900;
  }
 .contact-title::before {
-  padding-right: 5px;
-  content: "\f2a0";
-  transform: rotate(-10deg);
-  color: white;
-  font-size: 2rem;
+  padding-right: 3px;
+  content:'';
+  background-image: url(../img/phone-square-alt-solid.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+.contact-tel::before {
+  margin: 0;
+  padding-right: 3px;
+  content:'';
+  background-image: url(../img/phone-alt-solid.svg);
+  background-size: 20px 20px;
+  background-repeat: no-repeat;
+  height: 20px;
+  width: 20px;
   vertical-align: middle;
 }
 .contact-line::before {
@@ -340,8 +354,38 @@ iframe {
   background-image: url(../img/line.svg);
   background-size: 30px 30px;
   background-repeat: no-repeat;
-  height: 40px;
-  width: 40px;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+.contact-what::before {
+  padding-right: 3px;
+  content:'';
+  background-image: url(../img/whatsapp-square.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+.contact-msg::before {
+  padding-right: 3px;
+  content:'';
+  background-image: url(../img/facebook-messenger.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
+  vertical-align: middle;
+}
+.contact-email::before {
+  padding-right: 5px;
+  content:'';
+  background-image: url(../img/envelope-solid.svg);
+  background-size: 30px 30px;
+  background-repeat: no-repeat;
+  height: 30px;
+  width: 30px;
   vertical-align: middle;
 }
 
@@ -403,8 +447,10 @@ iframe {
 }
 .card-content p {
   line-height: 1.5;
-  font-size: 1.2rem;
+  font-size: 1rem;
+  text-align: start;
 }
+
 
 iframe {
   max-width: 100%;
