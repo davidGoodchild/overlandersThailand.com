@@ -18,6 +18,7 @@ h3,
 h4,
 h5,
 h6{
+  font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg-color);
   color: var(--title-color);
 }
@@ -46,7 +47,7 @@ h6{
     padding: 0;
     display: flex;
 }
-.navbar-links li {
+ li {
     list-style: none;
 }
 .navbar-links li:hover {
@@ -253,13 +254,12 @@ h6{
    max-width: 100ch;
 }
 .main-title {
+  margin-top: 10px;
   font-size: 2rem;
   text-align: center;
 }
-.facilities-title,
-.directions h4,
-.distance-title,
-.reservations-title {
+/* subtitles */
+h3 {
   /* border: solid 1px red; */
   margin: 1rem 1rem;
   text-align: center;
@@ -267,19 +267,22 @@ h6{
   text-align: center;
   /* text-shadow: 1px 1.5px 8px #333; */
 }
-.map-title{
-  font-size: 1.2rem;
+.directions-tagline {
+  text-align: center;
 }
-
-.info-p,
-.map-p,
-.address,
-.distance
+p,
+.address-list-item,
+.distance-list-item,
+.check-in-item
  {
   margin: 1rem 0 1rem 0;
   font-size: 1.2rem;
   line-height: 1.2;
   max-width: 100ch;
+}
+.map-p,
+.address-list-item {
+  line-height: .8;
 }
 .address {
   line-height: 1.5
@@ -330,7 +333,7 @@ iframe {
 }
 .rates-title,
 .info-rate {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
 }
 
 
@@ -385,5 +388,8 @@ iframe {
 .google-map {
   width: 500px;
   height: 350px;
+}
+.long-stay-title {
+  font-size: 1.2rem;
 }
 }
