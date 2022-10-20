@@ -23,6 +23,7 @@ h6{
   font-family: Arial, Helvetica, sans-serif;
   background-color: var(--bg-color);
   color: var(--title-color);
+  line-height: 1.2;
 }
 /* large screen left and right margin */
 main {
@@ -270,26 +271,24 @@ h3 {
   text-align: center;
 }
 p,
-.address-list-item,
+
 .distance-list-item,
 .check-in-item
  {
   margin: 1rem 0 1rem 0;
   font-size: 1.2rem;
-  line-height: 1.2;
+  /* line-height: 1.2; */
   max-width: 100ch;
 }
-.map-p,
-.address-list-item {
-  line-height: .8;
-}
-.address {
-  line-height: 1.5
-}
-.distance {
-  font-weight: 400;
+
+.address li {
   line-height: 1.5;
 }
+.gps li{
+  /* border: solid 1px yellow; */
+  line-height: 1.5;
+}
+
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -323,11 +322,9 @@ iframe {
  .icon::before {
   font-family: "Font Awesome 5 Free";
   display: inline-block;
-  
-  
   font-weight: 900;
  }
-.contact-title::before {
+/* .contact-title::before {
   padding-right: 3px;
   content:'';
   background-image: url(../img/phone-square-alt-solid.svg);
@@ -336,58 +333,73 @@ iframe {
   height: 40px;
   width: 40px;
   vertical-align: middle;
+} */
+
+
+.social ul{
+  /* border: solid 1px yellow; */
+  display: flex;
+  gap: 1rem;
+  align-items: start;
+  justify-content: start;
 }
-.contact-tel::before {
-  margin: 0;
+
+.social-link-tel::before {
+  display: inline-block;
   padding-right: 3px;
   content:'';
-  background-image: url(../img/phone-alt-solid.svg);
-  background-size: 20px 20px;
+  background-image: url(../img/phone-square-alt-solid.svg);
+  background-size: 40px 40px;
   background-repeat: no-repeat;
-  height: 20px;
-  width: 20px;
+  height: 40px;
+  width: 40px;
   vertical-align: middle;
 }
-.contact-line::before {
+.social-link-email::before {
+  display: inline-block;
+  padding-right: 3px;
+  content:'';
+  background-image: url(../img/envelope-solid.svg);
+  background-size: 40px 40px;
+  background-repeat: no-repeat;
+  height: 40px;
+  width: 40px;
+  vertical-align: middle;
+}
+.social-link-line::before {
+  display: inline-block;
   padding-right: 3px;
   content:'';
   background-image: url(../img/line.svg);
-  background-size: 30px 30px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   vertical-align: middle;
 }
-.contact-what::before {
+.social-link-what::before {
+  display: inline-block;
   padding-right: 3px;
   content:'';
   background-image: url(../img/whatsapp-square.svg);
-  background-size: 30px 30px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   vertical-align: middle;
 }
-.contact-msg::before {
+.social-link-msg::before {
+  display: inline-block;
   padding-right: 3px;
   content:'';
   background-image: url(../img/facebook-messenger.svg);
-  background-size: 30px 30px;
+  background-size: 40px 40px;
   background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   vertical-align: middle;
 }
-.contact-email::before {
-  padding-right: 5px;
-  content:'';
-  background-image: url(../img/envelope-solid.svg);
-  background-size: 30px 30px;
-  background-repeat: no-repeat;
-  height: 30px;
-  width: 30px;
-  vertical-align: middle;
-}
+
 
 
 .google-map {
@@ -434,7 +446,7 @@ iframe {
     .info-p {
     margin-bottom: 1rem;
     font-size: 1.2rem;
-    line-height: 1.2;
+    /* line-height: 1.2; */
     text-align: start;
 }
 .card {
@@ -448,9 +460,14 @@ iframe {
 .card-content p {
   line-height: 1.5;
   font-size: 1rem;
-  text-align: start;
+  text-align: center;
 }
-
+.social ul{
+  /* border: solid 1px yellow; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
 iframe {
   max-width: 100%;
