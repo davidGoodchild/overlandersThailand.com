@@ -89,7 +89,6 @@ main {
 }
 /* header carousel */
 @import url("https://fonts.googleapis.com/css2?family=Gorditas&display=swap");
-
 .container {
   display: grid;
   grid-template: "container" 1fr;
@@ -98,26 +97,20 @@ main {
   overflow: hidden;
   max-height: clamp(450px, 50vh, 600px);
 }
-
 .container > * {
   grid-area: container;
   max-width: 100vw;
 }
-
 .carousel-control.prev {
   place-self: center left;
 }
-
 .carousel-control.next {
   place-self: center right;
 }
-
 .carousel-dots {
   place-self: end center;
 }
-
 /* Other element styles */
-
 * {
   box-sizing: border-box;
 }
@@ -132,7 +125,6 @@ main {
   width: 100%;
   /* color: white; */
 }
-
 .title {
   position: relative;
   font-family: "Gorditas", sans-serif;
@@ -145,20 +137,17 @@ main {
   place-self: center center;
   background-color: rgb(51, 51, 51, 0.3);
 }
-
 .carousel-viewport {
   position: relative;
   overflow: hidden;
   margin: 0 auto;
   z-index: -1;
 }
-
 .carousel-viewport .items {
   position: relative;
   display: flex;
   transition: transform 500ms cubic-bezier(0.25, 1, 0.5, 1);
 }
-
 .carousel-viewport .item {
   position: relative;
   overflow: hidden;
@@ -166,17 +155,14 @@ main {
   min-width: 100%;
   transform: translateZ(0);
 }
-
 .carousel-viewport img {
   object-fit: cover;
   width: 100%;
   height: 100%;
   user-select: none;
 }
-
 .carousel-control {
   --size: clamp(2.5rem, 8vw, 4rem);
-
   position: relative;
   cursor: pointer;
   display: flex;
@@ -192,23 +178,19 @@ main {
   touch-action: manipulation;
   transform: translateY(0);
 }
-
 .carousel-control:active {
   transform: translateY(1px);
 }
-
 .carousel-control svg {
   width: 100%;
   height: 100%;
   pointer-events: none;
 }
-
 .carousel-dots {
   display: flex;
   gap: 1rem;
   padding: 1rem;
 }
-
 .carousel-dots .dot {
   --size: 1rem;
   padding: 0;
@@ -220,11 +202,9 @@ main {
   width: var(--size);
   height: var(--size);
 }
-
 .carousel-dots .dot.active {
   background-color:var(--controls);
 }
-
 /* aspect-ratio fallback */
 @supports not (aspect-ratio: 16 / 9) {
   .carousel-viewport .item::before {
@@ -232,7 +212,6 @@ main {
     float: left;
     padding-top: 56.25%;
   }
-
   .carousel-viewport .item::after {
     content: "";
     display: block;
@@ -243,7 +222,6 @@ main {
 .main-container {
   display: grid;
 }
-
     section {
    /* border: solid 1px red; */
    margin: 0 auto;
@@ -271,7 +249,6 @@ h3 {
   text-align: center;
 }
 p,
-
 .distance-list-item,
 .check-in-item
  {
@@ -280,7 +257,6 @@ p,
   /* line-height: 1.2; */
   max-width: 100ch;
 }
-
 .address li {
   line-height: 1.5;
 }
@@ -288,7 +264,6 @@ p,
   /* border: solid 1px yellow; */
   line-height: 1.5;
 }
-
 .card {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -317,7 +292,6 @@ iframe {
   line-height: 1.5;
   font-size: 1.5rem;
 }
-
 /* font awesome icons */
  .icon::before {
   font-family: "Font Awesome 5 Free";
@@ -334,8 +308,6 @@ iframe {
   width: 40px;
   vertical-align: middle;
 } */
-
-
 .social ul{
   /* border: solid 1px yellow; */
   display: flex;
@@ -343,7 +315,6 @@ iframe {
   align-items: start;
   justify-content: start;
 }
-
 .social-link-tel::before {
   display: inline-block;
   padding-right: 3px;
@@ -399,9 +370,6 @@ iframe {
   width: 40px;
   vertical-align: middle;
 }
-
-
-
 .google-map {
   margin: 1rem 0;
   width: 800px;
@@ -426,8 +394,6 @@ iframe {
 #copyright {
   text-align: start;
 }
-
-
 /* media query for mobile */
 @media (max-width: 600px) {
   body {
@@ -475,7 +441,6 @@ iframe {
   align-items: center;
   justify-content: center;
 }
-
 iframe {
   max-width: 100%;
   max-height: 200px;
