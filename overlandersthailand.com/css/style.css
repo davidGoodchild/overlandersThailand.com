@@ -27,7 +27,7 @@ h6{
 }
 /* large screen left and right margin */
 main {
-  margin: 0 3rem;
+  margin-block: auto;
 }
 /* navigation section - hamburger separate file */
 .menu-wrap {
