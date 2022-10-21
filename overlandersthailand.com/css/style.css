@@ -12,6 +12,9 @@ body{
   
   background-image: url(../img/topography.svg);
 }
+html {
+  scroll-behavior: smooth;
+}
 /* global body and h styling */
 body,
 h1,
