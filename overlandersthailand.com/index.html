@@ -164,7 +164,7 @@
 			<section class="facilities">
 				<h3 class="facilities-title">Facilities</h3>
 				<p class="info-p">
-					Plodd Stop Overlander Base is run by David. It is located next to our
+					Plodd Stop is located next to our
 					house, just outside Pattaya city, with plenty of shops and places to eat
 					nearby. Unfortunately, we cannot provide much by way of catering, although
 					we do have a very nice roof top patio, with a fridge, water heater and a
@@ -318,7 +318,13 @@ Bt 100 per day per vehicle
         <h4 class="end-tagline-title">“Created by Overlanders for Overlanders!”</h4>
       </section>
 	</main>
-	<footer class="footer"></footer>
+	<footer class="footer">
+		
+		<div id="copyright"></div>
+		<div class="created-by">Created by John Holt</div>
+
+    
+	</footer>
     <script>const toggleButton = document.getElementsByClassName('toggle-button')[0]
 const navbarLinks = document.getElementsByClassName('navbar-links')[0]
 
@@ -326,6 +332,15 @@ toggleButton.addEventListener('click', () => {
     navbarLinks.classList.toggle('active')
     console.log(navbarLinks)
 })</script>
+<script>
+      const paragraph = `
+      <p>
+        Copyright &copy; ${new Date().getFullYear()} Plodd Stop
+      </p>
+    `;
+
+      document.getElementById('copyright').innerHTML = paragraph;
+    </script>
 
 	</body>
 </html>
